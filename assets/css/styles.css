@@ -283,6 +283,7 @@ img {
 	position: fixed;
 	visibility: hidden;
 	z-index: var(--z-fixed);
+	overflow: scroll;
 	/* offset */
 	top: 0;
 	left: -100%;
@@ -524,7 +525,7 @@ img {
 .projects .flipcard {
 	/* display */
 	width: 100%;
-	min-width: 290px;
+	min-width: 270px;
 	max-width: 400px;
 	aspect-ratio: 1/2;
 	perspective: var(--perspective);
