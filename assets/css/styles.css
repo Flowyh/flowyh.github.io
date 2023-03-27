@@ -17,9 +17,9 @@
 	--body-font: "Lexend", sans-serif;
 	--huge-font-size: 2.25rem;
 	--biggest-font-size: 1.75rem;
-	--h1-font-size: 1.5rem;
-	--h2-font-size: 1.25rem;
-	--h3-font-size: 1rem;
+	--evenbigger-font-size: 1.5rem;
+	--bigger-font-size: 1.25rem;
+	--big-font-size: 1rem;
 	--normal-font-size: 0.938rem;
 	--small-font-size: 0.813rem;
 	--smaller-font-size: 0.75rem;
@@ -28,7 +28,7 @@
 
 	/*========== Z-index ==========*/
 	--z-fixed: 100;
-	--z-modal: 1000;
+	--z-hamburger: 1000;
 	--perspective: 1000px;
 
 	/*========== Others ==========*/
@@ -41,9 +41,9 @@
 	:root {
 		--huge-font-size: 3rem;
 		--biggest-font-size: 2.5rem;
-		--h1-font-size: 2.25rem;
-		--h2-font-size: 1.5rem;
-		--h3-font-size: 1.25rem;
+		--evenbigger-font-size: 2.25rem;
+		--bigger-font-size: 1.5rem;
+		--big-font-size: 1.25rem;
 		--normal-font-size: 1rem;
 		--small-font-size: 0.875rem;
 		--smaller-font-size: 0.813rem;
@@ -117,7 +117,7 @@ img {
 }
 
 .section {
-	font-size: var(--h2-font-size);
+	font-size: var(--bigger-font-size);
 	padding: 1rem;
 }
 
@@ -151,7 +151,7 @@ img {
 }
 
 .section__subtitle {
-	font-size: var(--h1-font-size);
+	font-size: var(--evenbigger-font-size);
 	font-weight: var(--font-semibold);
 	color: var(--text-color-light);
 }
@@ -227,7 +227,7 @@ img {
 	position: fixed;
 	display: flex;
 	align-items: center;
-	z-index: var(--z-modal);
+	z-index: var(--z-hamburger);
 	/* offset */
 	top: 20px;
 	left: 20px;
@@ -236,7 +236,7 @@ img {
 	height: 26px;
 	/* style */
 	cursor: pointer;
-	font-size: var(--h1-font-size);
+	font-size: var(--evenbigger-font-size);
 }
 
 /* Make hamburger from 3 lines */
@@ -291,7 +291,7 @@ img {
 	height: 100%;
 	/* style */
 	margin: 0;
-	padding: 4.5rem 0; /* from top of screen */
+	padding: 2rem 0; /* from top of screen */
 	text-align: center;
 	backdrop-filter: blur(10px);
 	background: rgba(0, 0, 0, 0.5);
@@ -300,11 +300,17 @@ img {
 	transition: 0.3s ease-in-out;
 }
 
+@media screen and (min-height: 650px) {
+	.menu__box {
+		padding-top: 4.5rem;
+	}
+}
+
 .menu__item {
 	/* display */
 	display: block;
 	/* style */
-	font-size: var(--h2-font-size);
+	font-size: var(--bigger-font-size);
 	font-weight: var(--font-semibold);
 	color: var(--text-color);
 	padding: 1.2rem 3rem;
@@ -351,7 +357,7 @@ img {
 
 .hero__text {
 	/* style */
-	font-size: var(--h3-font-size);
+	font-size: var(--big-font-size);
 	color: var(--text-color-light);
 	text-align: center;
 	padding: 1rem;
@@ -379,7 +385,7 @@ img {
 	}
 	.hero__text > p {
 		padding: 0;
-		font-size: var(--h2-font-size);
+		font-size: var(--bigger-font-size);
 	}
 }
 
@@ -452,6 +458,8 @@ img {
 	flex-direction: column;
 	justify-content: left;
 	/* size */
+	min-width: 290px;
+	max-width: 400px;
 	/* style */
 	background-color: var(--container-color);
 	border-radius: 0.5rem;
@@ -473,7 +481,7 @@ img {
 .experience__title {
 	/* style */
 	color: var(--text-color-light);
-	font-size: var(--h1-font-size);
+	font-size: var(--evenbigger-font-size);
 	text-align: center;
 }
 
@@ -485,7 +493,7 @@ img {
 	padding: 0.5rem;
 	/* style */
 	text-align: left;
-	font-size: var(--h3-font-size);
+	font-size: var(--big-font-size);
 }
 
 .experience__item i {
@@ -516,6 +524,8 @@ img {
 .projects .flipcard {
 	/* display */
 	width: 100%;
+	min-width: 290px;
+	max-width: 400px;
 	aspect-ratio: 1/2;
 	perspective: var(--perspective);
 }
@@ -524,7 +534,7 @@ img {
 	/* style */
 	width: 100%;
 	color: var(--text-color-light);
-	font-size: var(--h1-font-size);
+	font-size: var(--evenbigger-font-size);
 	text-align: center;
 }
 
@@ -546,7 +556,7 @@ img {
 	justify-content: space-evenly;
 	align-items: flex-start;
 	padding: 0.5rem;
-	font-size: var(--h3-font-size);
+	font-size: var(--big-font-size);
 }
 
 .projects pre {
@@ -565,7 +575,7 @@ img {
 
 @media screen and (min-width: 800px) {
 	.project__title {
-		font-size: var(--h2-font-size);
+		font-size: var(--bigger-font-size);
 	}
 
 	.projects .flipcard__front {
