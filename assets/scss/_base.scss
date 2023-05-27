@@ -1,0 +1,67 @@
+/*=============== BASE ===============*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	// Firefox scrollbar
+	scrollbar-width: thin;
+	scrollbar-color: $first-color darken($container-color, 50%);
+
+	// Chrome, Edge, Safari
+	&::-webkit-scrollbar {
+		height: px__to__rem(0px);
+		width: px__to__rem(5px);
+	}
+
+	&::-webkit-scrollbar-track {
+		background: darken($container-color, 50%);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $first-color;
+		border-radius: px__to__rem(0px);
+		border: px__to__rem(0px) solid darken($container-color, 50%);
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-stack;
+	text-align: justify;
+	text-justify: inter-word;
+	@include bg($body-color);
+	@include font($normal-font-size, $font-medium);
+	transition: 0.4s;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: text__color($body-color, $first-color-dark, $first-color);
+}
+
+p {
+	padding: 0.5rem 0;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#contact {
+	text-align: start;
+}

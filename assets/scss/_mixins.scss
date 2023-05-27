@@ -1,0 +1,49 @@
+/*========== MIXINS ==========*/
+
+@mixin bg($color) {
+	background: $color;
+	color: text__color($color);
+}
+
+@mixin font($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin text__bold__center($size) {
+	@include font($size, $font-semibold);
+	text-align: center;
+}
+
+@mixin display($display, $justify, $align) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin display__center($display) {
+	@include display($display, center, center);
+}
+
+@mixin blur($blur, $shadow) {
+	backdrop-filter: blur($blur);
+	background: rgba(0, 0, 0, $shadow);
+}
+
+@mixin width__height($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin fixed__bg__img($src) {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url($src);
+}
+
+@mixin grid__rows__cols($rows, $cols) {
+	grid-template-columns: repeat($cols, 1fr);
+	grid-template-rows: repeat($rows, 1fr);
+}

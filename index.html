@@ -1,561 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Maciej Bazela | @Flowyh</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maciej Bazela | @Flowyh</title>
 
-		<!-- CSS Styles-->
-		<link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- CSS Styles-->
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
 
-		<!-- Boxicons -->
-		<link
-			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-		<!-- Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<body>
-		<!--	Header with burger menu -->
-		<aside>
-			<nav>
-				<input id="menu__toggle" type="checkbox" />
-				<label class="menu__hamburger" for="menu__toggle">
-					<span></span>
-				</label>
-				<div class="menu__box container">
-					<ul>
-						<li><a class="menu__item" href="#about">About me</a></li>
-						<li><a class="menu__item" href="#skills">Skills</a></li>
-						<li>
-							<a class="menu__item" href="#experience"
-								>Experience & Education</a
-							>
-						</li>
-						<li><a class="menu__item" href="#projects">Projects</a></li>
-						<li><a class="menu__item" href="#interests">Interests</a></li>
-						<li><a class="menu__item" href="#contact">Contact</a></li>
-					</ul>
-					<ul class="menu__socials">
-						<li>
-							<a href="https://github.com/Flowyh">
-								<i class="bx bxl-github"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/maciej-bazela/">
-								<i class="bx bxl-linkedin-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/FlowyhDev">
-								<i class="bx bxl-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:maciejbazela01@gmail.com">
-								<i class="bx bxs-envelope"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</aside>
+  <body>
+    <!-- Page-load scripts -->
+    <script src="assets/js/hamburger_menu.js" defer></script>
+    <script src="assets/js/load_images.js" defer></script>
 
-		<main class="main">
-			<section class="hero__section">
-				<div class="hero__text container">
-					<h1>
-						Maciej Bazela | <a href="https://github.com/Flowyh">Flowyh</a>
-					</h1>
-					<p>Young and ambitious programmer</p>
-					<p>Experienced in professional environments</p>
-					<p>Explorer of new technologies</p>
-				</div>
-			</section>
-			<section class="section" id="about">
-				<header class="section__title">Who am I?</header>
-				<article class="flexbox">
-					<div class="container">
-						<p>
-							Hi, I am Maciek and I fell in love with programming a long time
-							ago.
-						</p>
-						<p>
-							I am currently a third-year Algorithmic Computer Science student
-							at
-							<a href="https://pwr.edu.pl/"
-								>Wrocław University of Science and Technology.</a
-							>
-						</p>
-						<p>
-							Right now I am working as a Junior Software Engineer (C/Python) at
-							<a href="https://www.tietoevry.com/pl/">TietoEvry</a>.
-						</p>
-						<p>
-							I am hardworking, ambitious and always looking for new challenges.
-							Therefore, every now and then I try to learn some new programming
-							languages, frameworks or libraries.
-						</p>
-						<p>
-							I am not afraid of taking risks and I am always open to new ideas.
-						</p>
-						<p>
-							I love playing table-top games (especially
-							<a href="https://www.catan.com/">Catan</a>/<a
-								href="https://en.wikipedia.org/wiki/Scrabble"
-								>Scrabble</a
-							>) and video games (mostly roguelikes). I also enjoy watching
-							movies and series. My all-time favorite is
-							<a href="https://www.imdb.com/title/tt3398228/">Bojack Horseman</a
-							>.
-						</p>
-					</div>
-					<aside class="about__avatar">
-						<img src="./assets/images/avatar.png" alt="thonk avatar" />
-					</aside>
-				</article>
-			</section>
-			<section class="skills section" id="skills">
-				<header class="section__title">What do I excel at?</header>
-				<article class="flexcolumn">
-					<div class="container">
-						<p>
-							So far, I've tried a lot of different programming languages and
-							frameworks. I've also worked on a lot of different projects.
-						</p>
-						<p>
-							However, below you can find all the technologies I am most
-							familiar with:
-						</p>
-					</div>
-					<div class="skills fill container grid">
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/c_logo.png"
-										alt="C"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										Started learning as a passion, now working as a C developer.
-									</p>
-									<p>(for almost a year now!)</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/python_logo.png"
-										alt="Python"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>Language I'm most fluent in.</p>
-									<p>Have been using it for personal projects since 2018.</p>
-									<p>I've even created my own Python courses!</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/julia_logo.png"
-										alt="Julia"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I've learnt Julia while working on metaheuristic algorithms
-										for TSP.
-									</p>
-									<p>
-										Most of my university projects are written in Julia, since
-										then!
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/scala_logo.png"
-										alt="Scala"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										Recently, I've picked up Scala as a alternative to Haskell.
-									</p>
-									<p>Also, I'm trying to land a new job as a Scala dev :)</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/nodejs_logo2.png"
-										alt="Node.js"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										My first professional work was related to Node.js backend
-										servers.
-									</p>
-									<p>I'd love to try it once again sometime in the future.</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/git_logo.png"
-										alt="Git"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I'm highly proficient in using git as a version control
-										system.
-									</p>
-									<p>
-										I've been using it since 2020, in personal and in
-										professional projects.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/docker_logo.png"
-										alt="Docker"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I've started using docker during my JavaScript-related work.
-									</p>
-									<p>I know the docker and docker-compose basics.</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/linux_logo.png"
-										alt="Linux"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I'm using Linux mostly as my dev environment (WSL2 - Ubuntu
-										distro).
-									</p>
-									<p>Also, I'm pretty good at bash-scripting.</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/aws_logo.png"
-										alt="AWS"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I've been managing a microservice application on AWS during
-										a group project course.
-									</p>
-									<p>I know a decent chunk about EC2 instances and DynamoDB.</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/dynamodb_logo.png"
-										alt="DynamoDB"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I've created a DynamoDB database for my most recent group
-										project (from scratch).
-									</p>
-									<p>
-										I've used DynamoDB's
-										<a
-											href="https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/Welcome.html"
-											>API</a
-										>
-										to modify that database.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/mysql_logo.png"
-										alt="MySql"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>I've learnt about MySQL databases at uni.</p>
-									<p>
-										I've created a
-										<a href="https://github.com/Gemi0/Gameshop">simple app</a>
-										using MySQL database with my friend for our assignment
-										project!
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<img
-										src="assets/images/mongodb_logo.png"
-										alt="mongoDB"
-										style="width: 120px; height: 120px"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<p>
-										I've been managing a mongoDB database, when I was working as
-										a Node.js dev in 2020.
-									</p>
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</article>
-				<article class="other__skills flexcolumn section">
-					<header class="section__subtitle">Other notable skills</header>
-					<ul>
-						<li><p>Broad knowledge about OOP design patterns.</p></li>
-						<li><p>Deep understanding of REST APIs and CRUD operations.</p></li>
-						<li>
-							<p>
-								Proficiency in both relational (SQL) and non-relational (NoSQL)
-								databases.
-							</p>
-						</li>
-						<li>
-							<p>
-								Advanced knolwedge about various data-patterns and algorithms.
-							</p>
-						</li>
-						<li>
-							<p>Algorithmic-thinking, outstanding problem-solving skills.</p>
-						</li>
-					</ul>
-				</article>
-			</section>
-			<section class="experience section" id="experience">
-				<header class="section__title">Experience & Education</header>
-				<article class="experience grid">
-					<div class="experience__box fill">
-						<header class="section__subtitle">Work experience</header>
-						<hr />
-						<div class="experience__item fill">
-							<header class="experience__title">
-								Junior Software Engineer
-							</header>
-							<p>
-								<i class="bx bx-calendar"></i>
-								July 2022 - ongoing
-							</p>
-							<p>
-								<i class="bx bx-time-five"></i>
-								Full-time
-							</p>
-							<p>
-								<i class="bx bx-map"></i>
-								TietoPoland Sp z o.o, Wrocław
-							</p>
-							<p>
-								<i class="experience__bullet bx bxs-chevron-right"></i>
-								Working with C code in teleco industry.
-							</p>
-							<p>
-								<i class="experience__bullet bx bxs-chevron-right"></i>
-								Developing a test framework in C and Python.
-							</p>
-							<p>
-								<i class="experience__bullet bx bxs-chevron-right"></i>
-								Giving Python lectures for several teams.
-							</p>
-						</div>
-						<hr />
-						<div class="experience__item fill">
-							<header class="experience__title">
-								Intern Node.js developer
-							</header>
-							<p>
-								<i class="bx bx-calendar"></i>
-								September 2020 - March 2021
-							</p>
-							<p>
-								<i class="bx bx-time-five"></i>
-								Part-time
-							</p>
-							<p>
-								<i class="bx bx-map"></i>
-								TMSolution Sp z o.o, Wrocław
-							</p>
-							<p>
-								<i class="bx bxs-chevron-right"></i>
-								Developing secure livestreaming backend for
-								<a href="https://tajnekoncerty.pl/">online concerts platform</a
-								>.
-							</p>
-							<p>
-								<i class="bx bxs-chevron-right"></i>
-								Creating websocket for ticket validation.
-							</p>
-							<p>
-								<i class="bx bxs-chevron-right"></i>
-								Creating RTMPS livestreaming server using
-								<a href="https://ffmpeg.org/">FFmpeg</a>.
-							</p>
-						</div>
-						<hr />
-						<div class="experience__item fill">
-							<header class="experience__title">Tutor</header>
-							<p>
-								<i class="bx bx-calendar"></i>
-								June 2020 - June 2022
-							</p>
-							<p>
-								<i class="bx bx-time-five"></i>
-								Part-time
-							</p>
-							<p>
-								<i class="bx bx-map"></i>
-								Home/online tutoring, Poland
-							</p>
-							<p>
-								<i class="experience__bullet bx bxs-chevron-right"></i>
-								Preparing polish high school students for Matura exams.
-							</p>
-							<p>
-								<i class="experience__bullet bx bxs-chevron-right"></i>
-								Subjects taught: Mathematics, English, Computer Science,
-								Physics.
-							</p>
-						</div>
-					</div>
-					<div class="experience__box education fill">
-						<header class="section__subtitle">Education</header>
-						<hr />
-						<div class="experience__item fill">
-							<header class="experience__title">Bachelor of Engineering</header>
-							<p>
-								<i class="bx bx-calendar"></i>
-								October 2020 - ongoing
-							</p>
-							<p>
-								<i class="bx bx-map"></i>
-								Wrocław University of Science and Technology, Wrocław
-							</p>
-							<p>
-								<i class="bx bxs-directions"></i>
-								Algorithmic Computer Science
-							</p>
-						</div>
-						<hr />
-						<div class="experience__item fill">
-							<header class="experience__title">High School Diploma</header>
-							<p>
-								<i class="bx bx-calendar"></i>
-								2017 - 2020
-							</p>
-							<p>
-								<i class="bx bx-map"></i>
-								Academic High School at Wrocław University of Science and
-								Technology, Wrocław
-							</p>
-						</div>
-					</div>
-				</article>
-			</section>
-			<section class="projects section" id="projects">
-				<header class="section__title">Personal projects</header>
-				<article class="flexcolumn">
-					<div class="container">
-						<p>
-							Most of my personal projects can be found on my
-							<a href="https://github.com/Flowyh">github</a> profile.
-						</p>
-						<p>
-							In the near future, I will clean up my github profile and add
-							repos, which are sitting on my local machine for a while.
-						</p>
-						<p>Below, you can find some of my projects, which I am proud of.</p>
-					</div>
-					<div class="projects grid fill container">
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<header class="project__title">LaggyTrylma</header>
-									<p>
-										<i class="bx bx-code-curly"></i>
-										Java, Maven, MonogDB, JUnit, Jackson, Mockito
-									</p>
-									<p>
-										<i class="bx bx-message-dots"></i>
-										Chinese checkers game with multiplayer support. Written in
-										Java. The game also uses MongoDB database to store previous
-										games.
-									</p>
-									<img
-										src="assets/images/trylma.png"
-										alt="cpu usage tracker screenshot"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<header class="section__subtitle">
-										Favorite code snippet:
-									</header>
-									<pre class="flexbox"><code>  /**
+    <!--	Header with burger menu -->
+    <aside>
+      <nav>
+        <button class="menu__hamburger disabled" id="hamburger"></button>
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__hamburger" for="menu__toggle" id="nojs__hamburger">
+          <span></span>
+        </label>
+        <div class="menu__box">
+          <ul>
+            <li><a class="menu__item" href="#about">About me</a></li>
+            <li><a class="menu__item" href="#skills">Skills</a></li>
+            <li>
+              <a class="menu__item" href="#experience"
+                >Experience & Education</a
+              >
+            </li>
+            <li><a class="menu__item" href="#projects">Projects</a></li>
+            <li><a class="menu__item" href="#interests">Interests</a></li>
+            <li><a class="menu__item" href="#contact">Contact</a></li>
+          </ul>
+          <ul class="menu__socials">
+            <li>
+              <a href="https://github.com/Flowyh">
+                <i class="bx bxl-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/maciej-bazela/">
+                <i class="bx bxl-linkedin-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/FlowyhDev">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:maciejbazela01@gmail.com">
+                <i class="bx bxs-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section class="hero__section">
+        <div class="hero__text">
+          <h1>
+            Maciej Bazela | <a href="https://github.com/Flowyh">Flowyh</a>
+          </h1>
+          <p>Young and ambitious programmer</p>
+          <p>Experienced in professional environments</p>
+          <p>Explorer of new technologies</p>
+        </div>
+      </section>
+      <article class="section" id="about">
+        <h1 class="section__title">Who am I?</h1>
+        <div class="flex container center">
+          <div>
+            <p>
+              Hi, I am Maciek and I fell in love with programming a long time
+              ago.
+            </p>
+            <p>
+              I am currently a third-year Algorithmic Computer Science student
+              at
+              <a href="https://pwr.edu.pl/"
+                >Wrocław University of Science and Technology.</a
+              >
+            </p>
+            <p>
+              Right now I am working as a Junior Software Engineer (C/Python) at
+              <a href="https://www.tietoevry.com/pl/">TietoEvry</a>.
+            </p>
+            <p>
+              I am hardworking, ambitious and always looking for new challenges.
+              Therefore, every now and then I try to learn some new programming
+              languages, frameworks or libraries.
+            </p>
+            <p>
+              I am not afraid of taking risks and I am always open to new ideas.
+            </p>
+            <p>
+              I love playing table-top games (especially
+              <a href="https://www.catan.com/">Catan</a>/<a
+                href="https://en.wikipedia.org/wiki/Scrabble"
+                >Scrabble</a
+              >) and video games (mostly roguelikes). I also enjoy watching
+              movies and series. My all-time favorite is
+              <a href="https://www.imdb.com/title/tt3398228/">Bojack Horseman</a
+              >.
+            </p>
+          </div>
+          <noscript id="avatar">
+            <img
+              class="about__avatar container"
+              src="./assets/images/avatar.png"
+              alt="avatar"
+            />
+          </noscript>
+        </div>
+      </article>
+      <article class="section" id="skills">
+        <h1 class="section__title">What do I excel at?</h1>
+        <div class="flex__column center container" id="main__skills">
+          <div>
+            <p>
+              So far, I've tried a lot of different programming languages and
+              frameworks. I've also worked on a lot of different projects.
+            </p>
+            <p>
+              However, below you can find all the technologies I am most
+              familiar with:
+            </p>
+          </div>
+          <div class="skills">
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="c_logo">
+                    <img src="assets/images/c_logo.png" alt="C" class="skill" />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    Started learning as a passion, now working as a C developer.
+                  </p>
+                  <p>(for almost a year now!)</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="python_logo">
+                    <img
+                      src="assets/images/python_logo.png"
+                      alt="Python"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>Language I'm most fluent in.</p>
+                  <p>Have been using it for personal projects since 2018.</p>
+                  <p>I've even created my own Python courses!</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="julia_logo">
+                    <img
+                      src="assets/images/julia_logo.png"
+                      alt="Julia"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I've learnt Julia while working on metaheuristic algorithms
+                    for TSP.
+                  </p>
+                  <p>
+                    Most of my university projects are written in Julia, since
+                    then!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="scala_logo">
+                    <img
+                      src="assets/images/scala_logo.png"
+                      alt="Scala"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    Recently, I've picked up Scala as a alternative to Haskell.
+                  </p>
+                  <p>Also, I've landed a new job as a Scala dev :)</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="nodejs_logo">
+                    <img
+                      src="assets/images/nodejs_logo.png"
+                      alt="Node.js"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    My first professional work was related to Node.js backend
+                    servers.
+                  </p>
+                  <p>I'd love to try it once again sometime in the future.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="git_logo">
+                    <img
+                      src="assets/images/git_logo.png"
+                      alt="Git"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I'm highly proficient in using git as a version control
+                    system.
+                  </p>
+                  <p>
+                    I've been using it since 2020, in personal and in
+                    professional projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="docker_logo">
+                    <img
+                      src="assets/images/docker_logo.png"
+                      alt="Docker"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I've started using docker during my JavaScript-related work.
+                  </p>
+                  <p>I know the docker and docker-compose basics.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="linux_logo">
+                    <img
+                      src="assets/images/linux_logo.png"
+                      alt="Linux"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I'm using Linux mostly as my dev environment (WSL2 - Ubuntu
+                    distro).
+                  </p>
+                  <p>Also, I'm pretty good at bash-scripting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="aws_logo">
+                    <img
+                      src="assets/images/aws_logo.png"
+                      alt="AWS"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I've been managing a microservice application on AWS during
+                    a group project course.
+                  </p>
+                  <p>I know a decent chunk about EC2 instances and DynamoDB.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="dynamodb_logo">
+                    <img
+                      src="assets/images/dynamodb_logo.png"
+                      alt="DynamoDB"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I've created a DynamoDB database for my most recent group
+                    project (from scratch).
+                  </p>
+                  <p>
+                    I've used DynamoDB's
+                    <a
+                      href="https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/Welcome.html"
+                      >API</a
+                    >
+                    to modify that database.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="mysql_logo">
+                    <img
+                      src="assets/images/mysql_logo.png"
+                      alt="MySql"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>I've learnt about MySQL databases at uni.</p>
+                  <p>
+                    I've created a
+                    <a href="https://github.com/Gemi0/Gameshop">simple app</a>
+                    using MySQL database with my friend for our assignment
+                    project!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <noscript id="mongodb_logo">
+                    <img
+                      src="assets/images/mongodb_logo.png"
+                      alt="mongoDB"
+                      class="skill"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <p>
+                    I've been managing a mongoDB database, when I was working as
+                    a Node.js dev in 2020.
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="flex__column section">
+          <h2 class="section__subtitle">Other notable skills</h2>
+          <ul>
+            <li><p>Broad knowledge about OOP design patterns.</p></li>
+            <li><p>Deep understanding of REST APIs and CRUD operations.</p></li>
+            <li>
+              <p>
+                Proficiency in both relational (SQL) and non-relational (NoSQL)
+                databases.
+              </p>
+            </li>
+            <li>
+              <p>
+                Advanced knolwedge about various data-patterns and algorithms.
+              </p>
+            </li>
+            <li>
+              <p>Algorithmic-thinking, outstanding problem-solving skills.</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="section" id="experience">
+        <h1 class="section__title">Experience & Education</h1>
+        <section class="experience center">
+          <div class="experience__box">
+            <h2 class="section__subtitle">Work experience</h2>
+            <hr />
+            <div class="experience__item">
+              <h3 class="experience__title">Junior Software Engineer</h3>
+              <p>
+                <i class="bx bx-calendar"></i>
+                July 2022 - ongoing
+              </p>
+              <p>
+                <i class="bx bx-time-five"></i>
+                Full-time
+              </p>
+              <p>
+                <i class="bx bx-map"></i>
+                TietoPoland Sp z o.o, Wrocław
+              </p>
+              <p>
+                <i class="experience__bullet bx bxs-chevron-right"></i>
+                Working with C code in teleco industry.
+              </p>
+              <p>
+                <i class="experience__bullet bx bxs-chevron-right"></i>
+                Developing a test framework in C and Python.
+              </p>
+              <p>
+                <i class="experience__bullet bx bxs-chevron-right"></i>
+                Giving Python lectures for several teams.
+              </p>
+            </div>
+            <hr />
+            <div class="experience__item">
+              <h3 class="experience__title">Intern Node.js developer</h3>
+              <p>
+                <i class="bx bx-calendar"></i>
+                September 2020 - March 2021
+              </p>
+              <p>
+                <i class="bx bx-time-five"></i>
+                Part-time
+              </p>
+              <p>
+                <i class="bx bx-map"></i>
+                TMSolution Sp z o.o, Wrocław
+              </p>
+              <p>
+                <i class="bx bxs-chevron-right"></i>
+                Developing secure livestreaming backend for
+                <a href="https://tajnekoncerty.pl/">online concerts platform</a
+                >.
+              </p>
+              <p>
+                <i class="bx bxs-chevron-right"></i>
+                Creating websocket for ticket validation.
+              </p>
+              <p>
+                <i class="bx bxs-chevron-right"></i>
+                Creating RTMPS livestreaming server using
+                <a href="https://ffmpeg.org/">FFmpeg</a>.
+              </p>
+            </div>
+            <hr />
+            <div class="experience__item">
+              <h3 class="experience__title">Tutor</h3>
+              <p>
+                <i class="bx bx-calendar"></i>
+                June 2020 - June 2022
+              </p>
+              <p>
+                <i class="bx bx-time-five"></i>
+                Part-time
+              </p>
+              <p>
+                <i class="bx bx-map"></i>
+                Home/online tutoring, Poland
+              </p>
+              <p>
+                <i class="experience__bullet bx bxs-chevron-right"></i>
+                Preparing polish high school students for Matura exams.
+              </p>
+              <p>
+                <i class="experience__bullet bx bxs-chevron-right"></i>
+                Subjects taught: Mathematics, English, Computer Science,
+                Physics.
+              </p>
+            </div>
+          </div>
+          <div class="experience__box">
+            <h2 class="section__subtitle">Education</h2>
+            <hr />
+            <div class="experience__item">
+              <h3 class="experience__title">Bachelor of Engineering</h3>
+              <p>
+                <i class="bx bx-calendar"></i>
+                October 2020 - ongoing
+              </p>
+              <p>
+                <i class="bx bx-map"></i>
+                Wrocław University of Science and Technology, Wrocław
+              </p>
+              <p>
+                <i class="bx bxs-directions"></i>
+                Algorithmic Computer Science
+              </p>
+            </div>
+            <hr />
+            <div class="experience__item">
+              <h3 class="experience__title">High School Diploma</h3>
+              <p>
+                <i class="bx bx-calendar"></i>
+                2017 - 2020
+              </p>
+              <p>
+                <i class="bx bx-map"></i>
+                Academic High School at Wrocław University of Science and
+                Technology, Wrocław
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="section" id="projects">
+        <h1 class="section__title">Personal projects</h1>
+        <section class="flex__column">
+          <div class="container center">
+            <p>
+              Most of my personal projects can be found on my
+              <a href="https://github.com/Flowyh">github</a> profile.
+            </p>
+            <p>
+              In the near future, I will clean up my github profile and add
+              repos, which are sitting on my local machine for a while.
+            </p>
+            <p>Below, you can find some of my projects, which I am proud of.</p>
+          </div>
+          <div class="projects">
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <h3 class="projects__title">LaggyTrylma</h3>
+                  <p>
+                    <i class="bx bx-code-curly"></i>
+                    Java, Maven, MonogDB, JUnit, Jackson, Mockito
+                  </p>
+                  <p>
+                    <i class="bx bx-message-dots"></i>
+                    Chinese checkers game with multiplayer support. Written in
+                    Java. The game also uses MongoDB database to store previous
+                    games.
+                  </p>
+                  <noscript id="trylma">
+                    <img
+                      src="assets/images/trylma.png"
+                      alt="cpu usage tracker screenshot"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <header class="section__subtitle">
+                    Favorite code snippet:
+                  </header>
+                  <pre class="flex"><code>  /**
    * Get instance of this server using 
    * double-checked locking method.
    * @return AbstractServer server's instance.
@@ -572,38 +599,40 @@
     }
     return localRef;
   }</code></pre>
-									<a href="https://github.com/Flowyh/LaggyTrylma">
-										<i class="bx bx-link"></i>
-										Github repository
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<header class="project__title">CPU Usage Tracker</header>
-									<p>
-										<i class="bx bx-code-curly"></i>
-										C, pthreads
-									</p>
-									<p>
-										<i class="bx bx-message-dots"></i>
-										Multithreaded C program, which tracks CPU cores' usage.
-										Written purely in C with pthreads.
-									</p>
-									<img
-										src="assets/images/cpu_usage_tracker.png"
-										alt="cpu usage tracker screenshot"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<header class="section__subtitle">
-										Favorite code snippet:
-									</header>
-									<pre
-										class="flexbox"
-									><code>ProcStatWrapper* procstatwrapper_create(void)
+                  <a href="https://github.com/Flowyh/LaggyTrylma">
+                    <i class="bx bx-link"></i>
+                    Github repository
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <h3 class="projects__title">CPU Usage Tracker</h3>
+                  <p>
+                    <i class="bx bx-code-curly"></i>
+                    C, pthreads
+                  </p>
+                  <p>
+                    <i class="bx bx-message-dots"></i>
+                    Multithreaded C program, which tracks CPU cores' usage.
+                    Written purely in C with pthreads.
+                  </p>
+                  <noscript id="cpu_usage_tracker">
+                    <img
+                      src="assets/images/cpu_usage_tracker.png"
+                      alt="cpu usage tracker screenshot"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <header class="section__subtitle">
+                    Favorite code snippet:
+                  </header>
+                  <pre
+                    class="flex"
+                  ><code>ProcStatWrapper* procstatwrapper_create(void)
 {
   ProcStatWrapper* const stats = malloc(sizeof(*stats));
 
@@ -624,45 +653,45 @@
                   };
   return stats;
 }</code></pre>
-									<a href="https://github.com/Flowyh/cpu-usage-tracker">
-										<i class="bx bx-link"></i>
-										Github repository
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="flipcard">
-							<div class="flipcard__inner fill">
-								<div class="flipcard__front fill flexcolumn">
-									<header class="project__title">
-										Metaheuristic Algorithms
-									</header>
-									<p>
-										<i class="bx bx-code-curly"></i>
-										Julia, Plots.jl, FLoops.jl
-									</p>
-									<p>
-										<i class="bx bx-message-dots"></i>
-										Implementation of various meta/heuristics for solving
-										Travelling Salesman Problem. The codebase is split into 3
-										folders.
-									</p>
-									<p>
-										First part contains naive neighbourhood search algorithms:
-										k-random, nearest neighbour, 2-opt. Second contains tabu
-										search implementation. Last implements artificial bee colony
-										algorithm.
-									</p>
-									<img
-										src="assets/images/bees.png"
-										alt="cpu usage tracker screenshot"
-									/>
-								</div>
-								<div class="flipcard__back fill flexcolumn">
-									<header class="section__subtitle">
-										Favorite code snippet:
-									</header>
-									<pre class="flexbox"><code>mutable struct Bee #🐝
+                  <a href="https://github.com/Flowyh/cpu-usage-tracker">
+                    <i class="bx bx-link"></i>
+                    Github repository
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flipcard">
+              <div class="flipcard__inner">
+                <div class="flipcard__front">
+                  <h3 class="projects__title">Metaheuristic Algorithms</h3>
+                  <p>
+                    <i class="bx bx-code-curly"></i>
+                    Julia, Plots.jl, FLoops.jl
+                  </p>
+                  <p>
+                    <i class="bx bx-message-dots"></i>
+                    Implementation of various meta/heuristics for solving
+                    Travelling Salesman Problem. The codebase is split into 3
+                    folders.
+                  </p>
+                  <p>
+                    First part contains naive neighbourhood search algorithms:
+                    k-random, nearest neighbour, 2-opt. Second contains tabu
+                    search implementation. Last implements artificial bee colony
+                    algorithm.
+                  </p>
+                  <noscript id="bees">
+                    <img
+                      src="assets/images/bees.png"
+                      alt="cpu usage tracker screenshot"
+                    />
+                  </noscript>
+                </div>
+                <div class="flipcard__back">
+                  <header class="section__subtitle">
+                    Favorite code snippet:
+                  </header>
+                  <pre class="flex"><code>mutable struct Bee #🐝
   #🌸 Current solution
   flower::Vector{Int} 
   #💼 No. moves to 🌸
@@ -674,101 +703,105 @@
   #💸 Accelerated distance
   wings::Function 
 end</code></pre>
-									<a href="https://github.com/Flowyh/metaheuristics">
-										<i class="bx bx-link"></i>
-										Github repository
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
+                  <a href="https://github.com/Flowyh/metaheuristics">
+                    <i class="bx bx-link"></i>
+                    Github repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- slideshow of projects and copyable code -->
-				</article>
-			</section>
-			<section class="section" id="interests">
-				<header class="section__title">My interests</header>
-				<article class="flexbox">
-					<aside class="petersen">
-						<img src="./assets/images/petersen2.png" alt="petersen graph" />
-					</aside>
-					<div class="container">
-						<p>
-							Beside my personal interests, I'm really invested in my current
-							studies. That's why I've developed a specific taste for certain
-							math topics and computer science subjects.
-						</p>
-						<p>
-							I really enjoy playing with anything that's graph related. I've
-							created several graph implementations in various languages
-							(currently, only for my own use).
-						</p>
-						<p>
-							Another thing I'm really interested in is metaheuristics and their
-							application in real life problems.
-						</p>
-						<p>
-							Recently I've started to learn more about compilers and
-							context-free-grammars. I've been working on a LALR(1) parser
-							generator for Julia, which I plan to turn into my bachelor's
-							thesis!
-						</p>
-						<p>
-							Last but not least, I've enrolled in a student reserach group
-							exploring reinforcement learning techniques and I'm planning on
-							making several AI-related projects in Julia soon!
-						</p>
-					</div>
-				</article>
-			</section>
-			<section class="section" id="contact">
-				<header class="section__title">Contact me</header>
-				<article class="flexcolumn">
-					<div class="container">
-						<p>
-							You can find me on several social media platforms:
-							<a href="https://www.linkedin.com/in/maciej-bazela/">LinkedIn</a>,
-							Discord (<a>Flowyh#5091</a>) and
-							<a href="https://twitter.com/FlowyhDev">Twitter</a>.
-						</p>
-						<p>
-							For any business inquires, please feel free to contact me:
-							<a href="mailto:maciejbazela01@gmail.com">
-								maciejbazela01@gmail.com
-							</a>
-						</p>
-					</div>
-				</article>
-			</section>
-		</main>
+          <!-- slideshow of projects and copyable code -->
+        </section>
+      </article>
+      <article class="section" id="interests">
+        <h1 class="section__title">My interests</h1>
+        <div class="flex container center">
+          <noscript id="petersen">
+            <img
+              class="petersen"
+              src="./assets/images/petersen.png"
+              alt="petersen graph"
+            />
+          </noscript>
+          <div>
+            <p>
+              Beside my personal interests, I'm really invested in my current
+              studies. That's why I've developed a specific taste for certain
+              math topics and computer science subjects.
+            </p>
+            <p>
+              I really enjoy playing with anything that's graph related. I've
+              created several graph implementations in various languages
+              (currently, only for my own use).
+            </p>
+            <p>
+              Another thing I'm really interested in is metaheuristics and their
+              application in real life problems.
+            </p>
+            <p>
+              Recently I've started to learn more about compilers and
+              context-free-grammars. I've been working on a LALR(1) parser
+              generator for Julia, which I plan to turn into my bachelor's
+              thesis!
+            </p>
+            <p>
+              Last but not least, I've enrolled in a student reserach group
+              exploring reinforcement learning techniques and I'm planning on
+              making several AI-related projects in Julia soon!
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="section" id="contact">
+        <h1 class="section__title">Contact me</h1>
+        <div class="flex__column">
+          <div class="container">
+            <p>
+              You can find me on several social media platforms:
+              <a href="https://www.linkedin.com/in/maciej-bazela/">LinkedIn</a>,
+              Discord (<a>Flowyh#5091</a>) and
+              <a href="https://twitter.com/FlowyhDev">Twitter</a>.
+            </p>
+            <p>
+              For any business inquires, please feel free to contact me:
+              <a href="mailto:maciejbazela01@gmail.com">
+                maciejbazela01@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
 
-		<footer class="flexcolumn">
-			<ul class="footer__socials">
-				<li>
-					<a href="https://github.com/Flowyh">
-						<i class="bx bxl-github"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/maciej-bazela/">
-						<i class="bx bxl-linkedin-square"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/FlowyhDev">
-						<i class="bx bxl-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:maciejbazela01@gmail.com">
-						<i class="bx bxs-envelope"></i>
-					</a>
-				</li>
-			</ul>
-			<div class="footer__copyright flexbox">
-				<i class="bx bx-copyright"></i>
-				<p>2023 Maciej Bazela - All Rights Reserved</p>
-			</div>
-		</footer>
-	</body>
+    <footer class="flex__column">
+      <ul class="footer__socials">
+        <li>
+          <a href="https://github.com/Flowyh">
+            <i class="bx bxl-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/maciej-bazela/">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/FlowyhDev">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:maciejbazela01@gmail.com">
+            <i class="bx bxs-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <i class="bx bx-copyright"></i>
+        <p>2023 Maciej Bazela - All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@function text__color(
+	$color,
+	$if-light: $text-color-dark,
+	$if-dark: $text-color
+) {
+	@if (lightness($color) > 60) {
+		@return $if-light;
+	} @else {
+		@return $if-dark;
+	}
+}
+
+@function px__to__rem($px) {
+	$rems: math.div($px, 16px) * 1rem;
+	@return $rems;
+}

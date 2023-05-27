@@ -1,0 +1,35 @@
+/*=============== SKILLS ===============*/
+
+.skills {
+	@extend %grid;
+	@extend %fill;
+	/* display */
+	@include grid__rows__cols(6, 2);
+	padding: 1rem 0;
+	box-sizing: border-box;
+
+	&__card {
+		/* style */
+		border-radius: 1rem;
+		background-color: var(--container-color);
+	}
+
+	& img {
+		object-fit: scale-down;
+	}
+}
+
+.skill {
+	width: 100%;
+	aspect-ratio: 1/1;
+}
+
+#skills li {
+	list-style-type: circle;
+}
+
+@include desktop {
+	.skills {
+		@include grid__rows__cols(3, 4);
+	}
+}

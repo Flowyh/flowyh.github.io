@@ -1,0 +1,56 @@
+@mixin flipcard__side {
+	/* display */
+	position: absolute;
+	padding: 0.25rem;
+	text-align: left;
+	backface-visibility: hidden;
+	/* style */
+	border-radius: 5%;
+	@include bg($container-color);
+	font-size: $smaller-font-size;
+	@extend %fill;
+	@extend .flex__column;
+}
+
+.flipcard {
+	/* display */
+	width: 100%;
+	aspect-ratio: 1/1;
+	perspective: $perspective;
+
+	&__inner {
+		/* display */
+		position: relative;
+		/* animation */
+		transition: transform 0.6s;
+		transform-style: preserve-3d;
+		@extend %fill;
+	}
+
+	&__front {
+		@include flipcard__side;
+	}
+
+	&__back {
+		@include flipcard__side;
+		transform: rotateY(180deg);
+		& > * {
+			/* display */
+			padding: 0.25rem;
+			width: 100%;
+		}
+	}
+
+	&:hover &__inner {
+		transform: rotateY(180deg);
+	}
+}
+
+@include desktop {
+	.flipcard {
+		&__front,
+		&__back {
+			font-size: $normal-font-size;
+		}
+	}
+}

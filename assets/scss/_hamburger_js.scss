@@ -1,0 +1,24 @@
+/* Added class on button click */
+.menu {
+	display: none;
+
+	&__box.active {
+		visibility: visible;
+		left: 0;
+	}
+
+	/* Change hamburger to close (X) icon */
+	&__hamburger.active {
+		& > span {
+			transform: rotate(45deg);
+		}
+		& > span:before {
+			top: 0;
+			transform: rotate(0);
+		}
+		& > span:after {
+			top: 0;
+			transform: rotate(90deg);
+		}
+	}
+}

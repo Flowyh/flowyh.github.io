@@ -1,0 +1,141 @@
+/*=============== NAVIGATION MENU ===============*/
+
+@mixin hamburger__line {
+	/* display */
+	position: absolute;
+	display: block;
+	content: ""; /* Content is required so that the pseudo elements are created */
+	/* size */
+	@include width__height(100%, px__to__rem(2px));
+	/* style */
+	background-color: $first-color;
+	/* animation */
+	transition: 0.3s;
+}
+
+/* Checkbox trigger */
+#menu__toggle {
+	display: none;
+
+	&:checked {
+		& ~ .menu__box {
+			visibility: visible;
+			left: 0;
+		}
+
+		/* Change hamburger to close (X) icon */
+		& ~ .menu__hamburger {
+			& > span {
+				transform: rotate(45deg);
+			}
+			& > span:before {
+				top: 0;
+				transform: rotate(0);
+			}
+			& > span:after {
+				top: 0;
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
+
+/* Hamburger box */
+.menu {
+	&__hamburger {
+		/* display */
+		position: fixed;
+		@include display(flex, flex-start, center);
+		z-index: $z-hamburger;
+
+		background-color: transparent;
+
+		/* offset */
+		top: px__to__rem(20px);
+		left: px__to__rem(20px);
+
+		/* size */
+		@include width__height(px__to__rem(26px), px__to__rem(26px));
+
+		/* style */
+		cursor: pointer;
+		font-size: $evenbigger-font-size;
+
+		& > span,
+		& > span:before,
+		& > span:after {
+			@include hamburger__line;
+		}
+
+		& > span:before {
+			top: px__to__rem(-8px);
+		}
+
+		& > span:after {
+			bottom: px__to__rem(-8px);
+		}
+	}
+
+	&__box {
+		/* display */
+		@extend .container;
+		position: fixed;
+		@include display(flex, space-between, normal);
+		flex-direction: column;
+		visibility: hidden;
+		z-index: $z-fixed;
+		overflow: scroll;
+
+		/* offset */
+		top: 0;
+		left: -100%;
+
+		/* size */
+		@include width__height($menu-box-width, 100%);
+
+		/* style */
+		margin: 0;
+		padding: 2rem 0;
+		text-align: center;
+		@if (lightness($body-color) > 75) {
+			@include blur(px__to__rem(10px), 0.75);
+		} @else {
+			@include blur(px__to__rem(10px), 0.5);
+		}
+		box-shadow: $shadow;
+		/* animation */
+		transition: 0.3s ease-in-out;
+	}
+
+	&__item {
+		/* display */
+		display: block;
+		/* style */
+		@include font($bigger-font-size, $font-semibold);
+		color: $text-color-light;
+		padding: 1.2rem 3rem;
+		/* animation */
+		transition: background 0.3s;
+
+		&:hover {
+			background-color: $container-color;
+		}
+	}
+
+	&__socials {
+		/* display */
+		@include display(flex, space-evenly, center);
+		a {
+			@include font($bigger-font-size, $font-medium);
+		}
+	}
+}
+
+@include landscape {
+	.menu__box {
+		padding-top: 4.5rem;
+		&::-webkit-scrollbar {
+			width: px__to__rem(0px);
+		}
+	}
+}

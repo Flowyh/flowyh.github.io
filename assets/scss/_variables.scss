@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap");
+
+/*========= Responsive =========*/
+$desktop-width: px__to__rem(800px);
+
+@mixin desktop {
+	@media screen and (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin landscape {
+	@media screen and (min-height: px__to__rem(550px)) {
+		@content;
+	}
+}
+
+/*========= Colors =========*/
+$first-hue: 207;
+$sat: 90%;
+$lig: 72%;
+$second-hue: 211;
+$first-color: hsl($first-hue, $sat, $lig);
+$first-color-dark: hsl($first-hue, $sat, 30%);
+$text-color: hsl($second-hue, 8%, 75%);
+$text-color-light: hsl($second-hue, 8%, 100%);
+$text-color-dark: hsl($second-hue, 8%, 15%);
+$body-color: hsl($second-hue, 48%, 8%);
+$body-color-light: hsl($second-hue, 55%, 20%);
+$container-color: hsl($second-hue, 44%, 28%);
+
+/*========= Fonts =========*/
+$font-stack: "Lexend", sans-serif;
+$huge-font-size: 2.25rem;
+$biggest-font-size: 1.75rem;
+$evenbigger-font-size: 1.5rem;
+$bigger-font-size: 1.25rem;
+$big-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+// Weight
+$font-medium: 500;
+$font-semibold: 600;
+
+@include desktop {
+	$huge-font-size: 3rem;
+	$biggest-font-size: 2.5rem;
+	$evenbigger-font-size: 2.25rem;
+	$bigger-font-size: 1.5rem;
+	$big-font-size: 1.25rem;
+	$normal-font-size: 1rem;
+	$small-font-size: 0.875rem;
+	$smaller-font-size: 0.813rem;
+}
+
+/*========== Z-index ==========*/
+$z-fixed: 100;
+$z-hamburger: 1000;
+$perspective: px__to__rem(1000px);
+
+/*========== Others ==========*/
+$menu-box-width: px__to__rem(250px);
+$shadow: px__to__rem(1px) px__to__rem(0px) px__to__rem(6px) rgba(0, 0, 0, 0.2);

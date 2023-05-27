@@ -1,0 +1,14 @@
+/*=============== ABOUT ===============*/
+
+.about__avatar {
+	/* display */
+	display: none;
+	width: 33%;
+	min-width: px__to__rem(460px);
+}
+
+@include desktop {
+	.about__avatar {
+		@include display__center(flex);
+	}
+}

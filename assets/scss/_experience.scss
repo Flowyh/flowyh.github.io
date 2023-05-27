@@ -1,0 +1,57 @@
+/*=============== EXPERIENCE | EDUCATION ===============*/
+
+.experience {
+	@extend %grid;
+	/* display */
+	@include grid__rows__cols(2, 1);
+	// padding: 1rem;
+
+	&__box {
+		/* display */
+		@extend %fill;
+		@include display(flex, left, normal);
+		flex-direction: column;
+		/* style */
+		background-color: $container-color;
+		border-radius: 0.5rem;
+
+		& hr {
+			/* style */
+			border: 0.15rem solid $text-color-light;
+		}
+	}
+
+	&__title {
+		/* style */
+		font-size: $evenbigger-font-size;
+		color: text__color($container-color, $text-color-dark, $text-color-light);
+		text-align: center;
+	}
+
+	&__item {
+		/* display */
+		@extend %fill;
+		@include display(flex, center, normal);
+		flex-direction: column;
+		padding: 0.5rem;
+		/* style */
+		text-align: left;
+		font-size: $big-font-size;
+
+		& i {
+			color: text__color($container-color, $text-color-dark, $text-color-light);
+		}
+
+		& p {
+			padding: 0;
+		}
+	}
+}
+
+@include desktop {
+	.experience {
+		max-width: px__to__rem(968px);
+		@include grid__rows__cols(1, 2);
+		justify-content: space-around;
+	}
+}

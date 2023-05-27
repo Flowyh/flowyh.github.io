@@ -1,0 +1,47 @@
+/*=============== HERO SECTION ===============*/
+
+.hero {
+	&__section {
+		/* display */
+		@include display__center(flex);
+		padding: 0;
+		/* size */
+		@include width__height(100%, 100vh);
+		/* https://pixabay.com/photos/stars-starry-sky-night-heaven-5084047/ */
+		@include fixed__bg__img("../images/hero_img.jpg");
+	}
+	&__text {
+		@extend .container;
+		/* style */
+		@include font($big-font-size, $font-medium);
+		color: $text-color-light;
+		text-align: center;
+		padding: 1rem;
+		@include blur(px__to__rem(2px), 0.2);
+		/* white border */
+		border: px__to__rem(2px) solid $text-color-light;
+		/* animation */
+		transition: all 0.5s ease-in-out;
+
+		& > p {
+			/* style */
+			padding: 0;
+			font-size: $normal-font-size;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+@include desktop {
+	.hero__text {
+		font-size: $biggest-font-size;
+
+		& > p {
+			padding: 0;
+			font-size: $bigger-font-size;
+		}
+	}
+}

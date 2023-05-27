@@ -1,0 +1,15 @@
+/*=============== INTERESTS ===============*/
+
+.petersen {
+	/* display */
+	width: 33%;
+	display: none;
+	min-width: px__to__rem(460px);
+	padding: 1rem;
+}
+
+@include desktop {
+	.petersen {
+		@include display__center(flex);
+	}
+}
